@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abba Planejados | Móveis Sob Medida em João Pessoa, Recife e Região</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Ambientes sonhados por você e realizados por nós! Móveis planejados sob medida de alto padrão para cozinhas, dormitórios, salas, banheiros e escritórios em João Pessoa, Campina Grande, Patos, Recife e região.">
+    <meta name="keywords" content="móveis planejados, marcenaria alto padrão, móveis sob medida João Pessoa, móveis planejados Recife, cozinhas planejadas, quartos planejados, Abba Planejados">
+    <meta name="author" content="Abba Planejados">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abba Planejados | Ambientes sonhados por você e realizados por nós">
+    <meta property="og:description" content="Móveis planejados sob medida de alto padrão em João Pessoa, Campina Grande, Patos, Recife e Região. Solicite seu orçamento!">
+    <meta property="og:image" content="images/banner1.jpg">
+    <meta property="og:url" content="https://www.instagram.com/abba.planejados/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="apple-touch-icon" href="images/logo-profile.jpg">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== SCROLL PROGRESS BAR ===== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ===== CURSOR GLOW ===== -->
+    <div id="cursor-glow"></div>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="loader">
+        <div class="loader-brand">
+            <img src="images/logo.svg" alt="Abba Planejados" class="loader-logo">
+            <span class="loader-tagline">Móveis Sob Medida</span>
+        </div>
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <div class="header-container">
+            <a href="#hero" class="logo" aria-label="Abba Planejados Home">
+                <img src="images/logo.svg" alt="Abba Planejados" class="logo-img">
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav id="nav-desktop">
+                <ul>
+                    <li><a href="#sobre" data-section="sobre">A Marcenaria</a></li>
+                    <li class="has-dropdown">
+                        <a href="#ambientes" data-section="ambientes">Ambientes <span class="dropdown-arrow">&#9662;</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#ambientes">Cozinhas Sob Medida &rarr;</a></li>
+                            <li><a href="#ambientes">Dormitórios &amp; Closets &rarr;</a></li>
+                            <li><a href="#ambientes">Salas &amp; Home Theater &rarr;</a></li>
+                            <li><a href="#ambientes">Banheiros &amp; Lavabos &rarr;</a></li>
+                            <li><a href="#ambientes">Home Office &amp; Corporativo &rarr;</a></li>
+                            <li><a href="#ambientes">Áreas Gourmet &rarr;</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#diferenciais" data-section="diferenciais">Diferenciais</a></li>
+                    <li><a href="#processo" data-section="processo">Como Funciona</a></li>
+                    <li><a href="#regioes" data-section="regioes">Regiões</a></li>
+                    <li><a href="#feed-instagram" data-section="feed-instagram">Instagram</a></li>
+                    <li><a href="#contato" data-section="contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contato" class="header-cta" data-open-modal>Solicitar Orçamento</a>
+                <button id="menu-toggle" aria-label="Abrir menu de navegação">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== MOBILE MENU OVERLAY ===== -->
+    <div id="mobile-menu">
+        <nav>
+            <ul>
+                <li><a href="#sobre">A Marcenaria</a></li>
+                <li class="mobile-has-dropdown">
+                    <a href="#ambientes" class="mobile-dropdown-toggle">Ambientes <span class="dropdown-arrow">&#9662;</span></a>
+                    <ul class="mobile-dropdown">
+                        <li><a href="#ambientes">Cozinhas Planejadas</a></li>
+                        <li><a href="#ambientes">Dormitórios &amp; Closets</a></li>
+                        <li><a href="#ambientes">Salas &amp; Home Theater</a></li>
+                        <li><a href="#ambientes">Banheiros &amp; Lavabos</a></li>
+                        <li><a href="#ambientes">Home Office</a></li>
+                        <li><a href="#ambientes">Áreas Gourmet</a></li>
+                    </ul>
+                </li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <li><a href="#processo">Como Funciona</a></li>
+                <li><a href="#regioes">Regiões Atendidas</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#feed-instagram">Instagram Oficial</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#" class="mobile-cta" data-open-modal>Solicitar Orçamento</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- ===== HERO SECTION WITH SLIDER ===== -->
+    <section id="hero">
+        <!-- Floating Gold Particles -->
+        <canvas id="hero-particles"></canvas>
+
+        <div class="hero-slider">
+            <!-- Slide 1 -->
+            <div class="hero-slide active" style="background-image: url('images/banner1.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg class="crown-icon" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
+                        Alto Padrão em Móveis Planejados
+                    </div>
+                    <h1 class="hero-title">Ambientes sonhados por você, <span class="gold-text">realizados por nós.</span></h1>
+                    <p class="hero-subtitle">Projetos sob medida inteligentes que unem o design contemporâneo, máxima durabilidade e sofisticação para cada cômodo do seu lar.</p>
+                    
+                    <div class="hero-locations">
+                        <span class="location-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            João Pessoa
+                        </span>
+                        <span class="location-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            Campina Grande
+                        </span>
+                        <span class="location-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            Patos
+                        </span>
+                        <span class="location-item">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+                            Recife &amp; Região
+                        </span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5583999567779?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Abba%20Planejados%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" class="btn-whatsapp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.42 11.42 0 0 0 12.04 0C5.45 0 .14 5.31.14 11.86c0 2.09.55 4.13 1.58 5.94L0 24l6.48-1.7a11.82 11.82 0 0 0 5.56 1.72h.01c6.59 0 11.9-5.31 11.9-11.86 0-3.17-1.23-6.15-3.43-8.38ZM12.04 21.6h-.01a9.79 9.79 0 0 1-4.98-1.38l-.36-.21-3.85 1 1.02-3.75-.23-.38a9.74 9.74 0 0 1-1.5-5.02c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.07 1.02 6.92 2.87a9.7 9.7 0 0 1 2.86 6.9c0 5.38-4.38 9.76-9.74 9.76Zm5.37-7.28c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.14-.17.2-.34.22-.63.08-.29-.15-1.23-.45-2.35-1.44-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.53.08-.8.38-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.38.24-.68.24-1.27.17-1.39-.08-.12-.27-.19-.56-.34Z"/></svg>
+                            Agendar Orçamento
+                        </a>
+                        <a href="#ambientes" class="btn-secondary">Ver Projetos</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="hero-slide" style="background-image: url('images/banner2.jpg');">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <svg class="crown-icon" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
+                        Soluções 100% Personalizadas
+                    </div>
+                    <h1 class="hero-title">Mobiliário premium com <span class="gold-text">precisão milimétrica.</span></h1>
+                    <p class="hero-subtitle">Visualização completa do seu projeto em 3D antes de ir para a fábrica. Conheça a diferença de uma marcenaria com acabamento de excelência.</p>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" data-open-modal>Simular Meu Projeto</button>
+                        <a href="#sobre" class="btn-secondary">Conhecer a Abba</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slider Dots -->
+        <div class="hero-controls">
+            <button class="hero-dot active" data-slide="0" aria-label="Ir para Slide 1"></button>
+            <button class="hero-dot" data-slide="1" aria-label="Ir para Slide 2"></button>
+        </div>
+
+        <!-- Mouse Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== COUNTERS SECTION ===== -->
+    <section id="counters">
+        <div class="container">
+            <div class="counters-grid">
+                <div class="counter-item reveal-up">
+                    <div class="counter-value">
+                        <span class="counter-prefix">+</span>
+                        <span class="counter-number" data-target="10">0</span>
+                    </div>
+                    <span class="counter-label">Anos de Experiência</span>
+                </div>
+                <div class="counter-divider"></div>
+
+                <div class="counter-item reveal-up">
+                    <div class="counter-value">
+                        <span class="counter-prefix">+</span>
+                        <span class="counter-number" data-target="1800">0</span>
+                    </div>
+                    <span class="counter-label">Ambientes Realizados</span>
+                </div>
+                <div class="counter-divider"></div>
+
+                <div class="counter-item reveal-up">
+                    <div class="counter-value">
+                        <span class="counter-number" data-target="100">0</span>
+                        <span class="counter-suffix">%</span>
+                    </div>
+                    <span class="counter-label">MDF de Alta Densidade</span>
+                </div>
+                <div class="counter-divider"></div>
+
+                <div class="counter-item reveal-up">
+                    <div class="counter-value">
+                        <span class="counter-number" data-target="5">0</span>
+                        <span class="counter-suffix">+</span>
+                    </div>
+                    <span class="counter-label">Regiões Atendidas</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SOBRE / A MARCENARIA SECTION ===== -->
+    <section id="sobre" class="section section-dark">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content reveal-left">
+                    <span class="section-tag">A Essência Abba</span>
+                    <h2 class="section-title">Design sofisticado, precisão e <span class="accent">paixão por cada detalhe</span></h2>
+                    <p class="section-text">A <strong>Abba Planejados</strong> nasceu com o propósito de transformar plantas e ideias em ambientes que respiram harmonia, bom gosto e eficiência. Cada projeto sob medida é desenvolvido respeitando a rotina, o espaço e a personalidade de quem vai viver nele.</p>
+                    <p class="section-text">Com parque fabril moderno e maquinário computadorizado de alta precisão, garantimos cortes milimétricos, fitamento de borda impecável e montagem limpa com equipe especializada em toda a Paraíba e Pernambuco.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                            <span>Projetos 3D realistas</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>Ferragens com amortecimento</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                            <span>Equipe de montagem própria</span>
+                        </div>
+                        <div class="about-feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span>Pontualidade no prazo acordado</span>
+                        </div>
+                    </div>
+
+                    <a href="https://wa.me/5583999567779?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20conversa%20sobre%20m%C3%B3veis%20planejados." target="_blank" class="btn-primary">
+                        Falar com Nossos Projetistas
+                    </a>
+                </div>
+
+                <div class="about-image reveal-right">
+                    <div class="image-frame" data-lightbox>
+                        <img src="images/sobre.jpg" alt="Acabamento refinado Abba Planejados" loading="lazy">
+                        <div class="about-badge-card">
+                            <div class="badge-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <div>
+                                <h4>Padrão Nobre</h4>
+                                <p>Fabricação e acabamento de alto nível</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="image-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== AMBIENTES SECTION ===== -->
+    <section id="ambientes" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Portfólio de Ambientes</span>
+                <h2 class="section-title">Soluções planejadas para <span class="accent">o seu espaço</span></h2>
+                <p class="section-subtitle">Conheça algumas das criações desenvolvidas sob medida para lares e empresas em João Pessoa, Campina Grande, Patos, Recife e região.</p>
+            </div>
+
+            <div class="ambientes-grid">
+                <!-- Cozinhas -->
+                <div class="ambiente-card reveal-up" data-ambiente="Cozinhas">
+                    <div class="ambiente-image">
+                        <img src="images/cozinhas.jpg" alt="Cozinhas planejadas de alto padrão" loading="lazy">
+                        <span class="ambiente-tag">Mais Solicitado</span>
+                        <div class="ambiente-overlay">
+                            <span class="ambiente-cta">Solicitar Projeto &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="ambiente-info">
+                        <h3>Cozinhas Sob Medida</h3>
+                        <p>Ilhas gourmet, torres quentes, gavetões reforçados e amortecimento suave para unir praticidade culinária e beleza.</p>
+                        <div class="ambiente-details">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> 100% MDF</span>
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Iluminação LED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dormitórios -->
+                <div class="ambiente-card reveal-up" data-ambiente="Dormitórios e Closets">
+                    <div class="ambiente-image">
+                        <img src="images/dormitorios.jpg" alt="Dormitórios e closets planejados" loading="lazy">
+                        <span class="ambiente-tag">Conforto &amp; Luxo</span>
+                        <div class="ambiente-overlay">
+                            <span class="ambiente-cta">Solicitar Projeto &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="ambiente-info">
+                        <h3>Dormitórios &amp; Closets</h3>
+                        <p>Armários com portas de correr, vidro reflecta, cabideiros iluminados e sapateiras projetadas para máxima organização.</p>
+                        <div class="ambiente-details">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Portas Reflecta</span>
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Divisórias Sob Medida</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Salas -->
+                <div class="ambiente-card reveal-up" data-ambiente="Salas e Home Theater">
+                    <div class="ambiente-image">
+                        <img src="images/salas.jpg" alt="Salas e Home Theaters planejados" loading="lazy">
+                        <span class="ambiente-tag">Estilo &amp; Acolhimento</span>
+                        <div class="ambiente-overlay">
+                            <span class="ambiente-cta">Solicitar Projeto &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="ambiente-info">
+                        <h3>Salas &amp; Home Theater</h3>
+                        <p>Painéis ripados modernos, nichos para equipamentos, passagem oculta de fiação e racks suspensos imponentes.</p>
+                        <div class="ambiente-details">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Painéis Ripados</span>
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Fiação Oculta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banheiros -->
+                <div class="ambiente-card reveal-up" data-ambiente="Banheiros e Lavabos">
+                    <div class="ambiente-image">
+                        <img src="images/banheiros.jpg" alt="Banheiros e lavabos elegantes sob medida" loading="lazy">
+                        <span class="ambiente-tag">Sofisticação</span>
+                        <div class="ambiente-overlay">
+                            <span class="ambiente-cta">Solicitar Projeto &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="ambiente-info">
+                        <h3>Banheiros &amp; Lavabos</h3>
+                        <p>Gabinetes funcionais e elegantes, espelheiras com iluminação indireta e materiais com tratamento contra umidade.</p>
+                        <div class="ambiente-details">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Proteção Umidade</span>
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Acabamento Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Office -->
+                <div class="ambiente-card reveal-up" data-ambiente="Home Office">
+                    <div class="ambiente-image">
+                        <img src="images/home-office.jpg" alt="Home office e escritórios planejados" loading="lazy">
+                        <span class="ambiente-tag">Produtividade</span>
+                        <div class="ambiente-overlay">
+                            <span class="ambiente-cta">Solicitar Projeto &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="ambiente-info">
+                        <h3>Home Office &amp; Corporativo</h3>
+                        <p>Estações de trabalho ergonômicas, gaveteiros com trava e prateleiras decorativas que elevam o padrão de produtividade.</p>
+                        <div class="ambiente-details">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Ergonomia Total</span>
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Organização Inteligente</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Áreas Gourmet -->
+                <div class="ambiente-card reveal-up" data-ambiente="Áreas Gourmet">
+                    <div class="ambiente-image">
+                        <img src="images/areas-gourmet.jpg" alt="Áreas gourmet e varandas planejadas" loading="lazy">
+                        <span class="ambiente-tag">Confraternização</span>
+                        <div class="ambiente-overlay">
+                            <span class="ambiente-cta">Solicitar Projeto &rarr;</span>
+                        </div>
+                    </div>
+                    <div class="ambiente-info">
+                        <h3>Áreas Gourmet &amp; Varandas</h3>
+                        <p>Bancadas para churrasco, cristaleiras, adegas climatizadas integradas e móveis preparados para áreas de lazer.</p>
+                        <div class="ambiente-details">
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Integração Completa</span>
+                            <span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg> Espaço Social</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DIFERENCIAIS SECTION ===== -->
+    <section id="diferenciais" class="section section-dark">
+        <div class="container">
+            <div class="diferenciais-layout">
+                <div class="diferenciais-intro reveal-left">
+                    <span class="section-tag">Por Que Escolher a Abba</span>
+                    <h2 class="section-title">O padrão de qualidade que <span class="accent">o seu imóvel merece</span></h2>
+                    <p class="section-text">Na <strong>Abba Planejados</strong>, tratamos cada projeto como uma obra de arte única. Cuidamos desde o primeiro esboço até a limpeza após a instalação para que você tenha uma experiência tranquila e surpreendente.</p>
+                    <button class="btn-primary" data-open-modal>Quero um Projeto Exclusivo</button>
+                </div>
+
+                <div class="diferenciais-grid">
+                    <!-- Diferencial 1 -->
+                    <div class="diferencial-card reveal-up">
+                        <div class="diferencial-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                        </div>
+                        <h3>Projetos 3D Foto-Realistas</h3>
+                        <p>Visualize os tons, acabamentos, iluminação e proporções dos seus móveis antes do início da fabricação.</p>
+                    </div>
+
+                    <!-- Diferencial 2 -->
+                    <div class="diferencial-card reveal-up">
+                        <div class="diferencial-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+                        </div>
+                        <h3>Matéria-Prima 100% MDF</h3>
+                        <p>Trabalhamos exclusivamente com placas de MDF de primeira linha e marcas consagradas, assegurando solidez e estabilidade.</p>
+                    </div>
+
+                    <!-- Diferencial 3 -->
+                    <div class="diferencial-card reveal-up">
+                        <div class="diferencial-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                        </div>
+                        <h3>Ferragens com Amortecimento</h3>
+                        <p>Corrediças telescópicas e dobradiças que fecham de forma silenciosa e suave, prevenindo impactos e desgaste.</p>
+                    </div>
+
+                    <!-- Diferencial 4 -->
+                    <div class="diferencial-card reveal-up">
+                        <div class="diferencial-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <h3>Entrega Ágil em até 35 Dias</h3>
+                        <p>Compromisso de fábrica: o seu projeto dos sonhos produzido, finalizado e entregue com pontualidade em até 35 dias.</p>
+                    </div>
+
+                    <!-- Diferencial 5 -->
+                    <div class="diferencial-card reveal-up">
+                        <div class="diferencial-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"/></svg>
+                        </div>
+                        <h3>Montagem Limpa e Cuidadosa</h3>
+                        <p>Equipe própria e capacitada, com respeito absoluto ao seu imóvel e acompanhamento detalhado até a vistoria final.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROCESSO / COMO FUNCIONA SECTION ===== -->
+    <section id="processo" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Passo a Passo</span>
+                <h2 class="section-title">Como funciona o seu projeto na <span class="accent">Abba Planejados</span></h2>
+                <p class="section-subtitle">Do atendimento inicial à entrega das chaves, um processo claro, transparente e sem surpresas.</p>
+            </div>
+
+            <div class="workflow-grid">
+                <div class="step-card reveal-up">
+                    <div class="step-number">01</div>
+                    <h3>Briefing &amp; Medição</h3>
+                    <p>Conversamos sobre suas necessidades, hábitos e referências visuais, com medição minuciosa do seu espaço ou envio de planta.</p>
+                </div>
+
+                <div class="step-card reveal-up">
+                    <div class="step-number">02</div>
+                    <h3>Criação em 3D</h3>
+                    <p>Desenvolvemos a visualização computadorizada realista do seu ambiente para ajustes finos e escolha de cores e padrões.</p>
+                </div>
+
+                <div class="step-card reveal-up">
+                    <div class="step-number">03</div>
+                    <h3>Fabricação Precisa</h3>
+                    <p>Produzimos cada peça em nossa marcenaria com máquinas de usinagem e bordamento de alta tecnologia.</p>
+                </div>
+
+                <div class="step-card reveal-up">
+                    <div class="step-number">04</div>
+                    <h3>Entrega &amp; Instalação</h3>
+                    <p>Montagem ágil, alinhamento perfeito de portas e gavetas, limpeza do local e entrega do termo de garantia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== REGIOES ATENDIDAS SECTION ===== -->
+    <section id="regioes" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Área de Atuação</span>
+                <h2 class="section-title">Presença forte na <span class="accent">Paraíba e Pernambuco</span></h2>
+                <p class="section-subtitle">Nossa logística e equipe de atendimento estão preparadas para atender você nas principais cidades e regiões metropolitanas.</p>
+            </div>
+
+            <div class="regions-grid">
+                <div class="region-card reveal-up">
+                    <div class="region-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    </div>
+                    <h3>João Pessoa &amp; Cabedelo</h3>
+                    <p>Sede e fábrica com atendimento prioritário em toda a região metropolitana da capital paraibana.</p>
+                </div>
+
+                <div class="region-card reveal-up">
+                    <div class="region-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    </div>
+                    <h3>Campina Grande</h3>
+                    <p>Atendimento frequente para residências, condomínios fechados e estabelecimentos comerciais.</p>
+                </div>
+
+                <div class="region-card reveal-up">
+                    <div class="region-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    </div>
+                    <h3>Patos &amp; Sertão</h3>
+                    <p>Projetos planejados executados com a mesma precisão e suporte em todo o interior paraibano.</p>
+                </div>
+
+                <div class="region-card reveal-up">
+                    <div class="region-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+                    </div>
+                    <h3>Recife &amp; Região</h3>
+                    <p>Projetos residenciais e corporativos na capital pernambucana com montagem ágil e garantia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== DEPOIMENTOS / SOCIAL PROOF SECTION ===== -->
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">Depoimentos Reais</span>
+                <h2 class="section-title">O que nossos clientes <span class="accent">dizem sobre nós</span></h2>
+                <p class="section-subtitle">A satisfação dos nossos clientes é o nosso maior orgulho. Veja o que dizem sobre a experiência Abba Planejados.</p>
+            </div>
+
+            <div class="testimonials-slider reveal-up">
+                <div class="testimonials-track" id="testimonials-track">
+                    <!-- Depoimento 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <p class="testimonial-text">A Abba superou todas as expectativas! Minha cozinha ficou exatamente como eu sonhava. O acabamento é impecável e a equipe de montagem foi super profissional e cuidadosa.</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">Patrícia Monteiro</span>
+                                <span class="testimonial-location">João Pessoa, PB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <p class="testimonial-text">Contratei a Abba para fazer o closet e os armários do quarto do casal. Entregaram antes do prazo e com uma qualidade absurda. Recomendo de olhos fechados!</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">Ricardo Lemos</span>
+                                <span class="testimonial-location">Campina Grande, PB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Depoimento 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                            <p class="testimonial-text">O projeto 3D me ajudou demais na decisão das cores e materiais. O resultado final ficou idêntico ao render! Fiz toda a área gourmet e o escritório com eles.</p>
+                            <div class="testimonial-author">
+                                <span class="testimonial-name">Fernanda Cavalcanti</span>
+                                <span class="testimonial-location">Recife, PE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-controls">
+                    <button class="testimonial-dot active" data-testimonial="0" aria-label="Depoimento 1"></button>
+                    <button class="testimonial-dot" data-testimonial="1" aria-label="Depoimento 2"></button>
+                    <button class="testimonial-dot" data-testimonial="2" aria-label="Depoimento 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== INSTAGRAM FEED GALLERY (FOTOS REAIS) ===== -->
+    <section id="feed-instagram" class="section section-dark">
+        <div class="container">
+            <div class="section-header reveal-up">
+                <span class="section-tag">
+                    <svg style="width: 14px; height: 14px; display: inline-block; vertical-align: middle; margin-right: 4px;" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    @abba.planejados no Instagram
+                </span>
+                <h2 class="section-title">Direto do nosso feed: <span class="accent">projetos reais</span></h2>
+                <p class="section-subtitle">Confira algumas das nossas publicações e bastidores de fabricação recentes compartilhados em nosso perfil oficial no Instagram.</p>
+            </div>
+
+            <div class="instagram-grid">
+                <!-- Post 1 -->
+                <a href="https://www.instagram.com/abba.planejados/" target="_blank" rel="noopener noreferrer" class="instagram-card reveal-up">
+                    <div class="instagram-media">
+                        <img src="images/insta/insta_post_17.jpg" alt="Projeto corporativo e comercial sob medida Abba Planejados" loading="lazy">
+                        <div class="instagram-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram-content">
+                        <p class="instagram-caption">Mobiliário corporativo sob medida: balcão, revestimentos e booths para restaurante.</p>
+                        <span class="instagram-link-text">Ver no Instagram &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Post 2 -->
+                <a href="https://www.instagram.com/abba.planejados/" target="_blank" rel="noopener noreferrer" class="instagram-card reveal-up">
+                    <div class="instagram-media">
+                        <img src="images/insta/insta_post_13.jpg" alt="Sala de estar e jantar integrada Abba Planejados" loading="lazy">
+                        <div class="instagram-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram-content">
+                        <p class="instagram-caption">Sala de estar e jantar integrada com painéis de madeira nobre e cristaleira com fitas de LED.</p>
+                        <span class="instagram-link-text">Ver no Instagram &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Post 3 -->
+                <a href="https://www.instagram.com/abba.planejados/" target="_blank" rel="noopener noreferrer" class="instagram-card reveal-up">
+                    <div class="instagram-media">
+                        <img src="images/insta/insta_post_07.jpg" alt="Fábrica Abba Planejados materiais de alta qualidade" loading="lazy">
+                        <div class="instagram-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram-content">
+                        <p class="instagram-caption">Bastidores de fábrica: usinagem milimétrica e seleção dos melhores materiais do mercado.</p>
+                        <span class="instagram-link-text">Ver no Instagram &rarr;</span>
+                    </div>
+                </a>
+
+                <!-- Post 4 -->
+                <a href="https://www.instagram.com/abba.planejados/" target="_blank" rel="noopener noreferrer" class="instagram-card reveal-up">
+                    <div class="instagram-media">
+                        <img src="images/insta/insta_post_09.jpg" alt="Entrega em 35 dias Abba Planejados" loading="lazy">
+                        <div class="instagram-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                        </div>
+                    </div>
+                    <div class="instagram-content">
+                        <p class="instagram-caption">O que você sonhou a vida toda realizado em 35 dias! Compromisso e agilidade.</p>
+                        <span class="instagram-link-text">Ver no Instagram &rarr;</span>
+                    </div>
+                </a>
+            </div>
+
+            <div style="text-align: center; margin-top: 44px;" class="reveal-up">
+                <a href="https://www.instagram.com/abba.planejados/" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                    <svg style="width: 18px; height: 18px; fill: currentColor; margin-right: 6px;" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/></svg>
+                    Seguir @abba.planejados no Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA BANNER SECTION ===== -->
+    <section id="cta" class="section cta-section">
+        <div class="container">
+            <div class="cta-content reveal-up">
+                <span class="section-tag">Comece Hoje</span>
+                <h2 class="section-title">Pronto para transformar a sua casa em um <span class="accent">ambiente inesquecível?</span></h2>
+                <p class="section-text">Fale agora diretamente com os consultores da Abba Planejados. Traga a sua planta ou venha tirar suas dúvidas sobre materiais, valores e prazos sem compromisso.</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/5583999567779?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" class="btn-whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.42 11.42 0 0 0 12.04 0C5.45 0 .14 5.31.14 11.86c0 2.09.55 4.13 1.58 5.94L0 24l6.48-1.7a11.82 11.82 0 0 0 5.56 1.72h.01c6.59 0 11.9-5.31 11.9-11.86 0-3.17-1.23-6.15-3.43-8.38ZM12.04 21.6h-.01a9.79 9.79 0 0 1-4.98-1.38l-.36-.21-3.85 1 1.02-3.75-.23-.38a9.74 9.74 0 0 1-1.5-5.02c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.07 1.02 6.92 2.87a9.7 9.7 0 0 1 2.86 6.9c0 5.38-4.38 9.76-9.74 9.76Zm5.37-7.28c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.14-.17.2-.34.22-.63.08-.29-.15-1.23-.45-2.35-1.44-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.53.08-.8.38-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.38.24-.68.24-1.27.17-1.39-.08-.12-.27-.19-.56-.34Z"/></svg>
+                        Falar no WhatsApp Agora
+                    </a>
+                    <button class="btn-secondary" data-open-modal>Preencher Dados do Orçamento</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER & CONTATO ===== -->
+    <footer id="contato">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1: Marca & Bio -->
+                <div class="footer-brand">
+                    <img src="images/logo.svg" alt="Abba Planejados" class="footer-logo">
+                    <p><em>"Ambientes sonhados por você e realizados por nós!"</em></p>
+                    <p style="margin-top: 10px;">Especialistas em móveis planejados e projetos de marcenaria sob medida de alto padrão para residências e empresas.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/abba.planejados/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Abba Planejados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                        <a href="https://wa.me/5583999567779" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Abba Planejados">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.42 11.42 0 0 0 12.04 0C5.45 0 .14 5.31.14 11.86c0 2.09.55 4.13 1.58 5.94L0 24l6.48-1.7a11.82 11.82 0 0 0 5.56 1.72h.01c6.59 0 11.9-5.31 11.9-11.86 0-3.17-1.23-6.15-3.43-8.38ZM12.04 21.6h-.01a9.79 9.79 0 0 1-4.98-1.38l-.36-.21-3.85 1 1.02-3.75-.23-.38a9.74 9.74 0 0 1-1.5-5.02c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.07 1.02 6.92 2.87a9.7 9.7 0 0 1 2.86 6.9c0 5.38-4.38 9.76-9.74 9.76Zm5.37-7.28c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.14-.17.2-.34.22-.63.08-.29-.15-1.23-.45-2.35-1.44-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.53.08-.8.38-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.38.24-.68.24-1.27.17-1.39-.08-.12-.27-.19-.56-.34Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Navegação -->
+                <div class="footer-links">
+                    <h4>Institucional</h4>
+                    <ul>
+                        <li><a href="#hero">Início</a></li>
+                        <li><a href="#sobre">A Marcenaria</a></li>
+                        <li><a href="#ambientes">Projetos &amp; Portfólio</a></li>
+                        <li><a href="#diferenciais">Nossos Diferenciais</a></li>
+                        <li><a href="#processo">Como Trabalhamos</a></li>
+                        <li><a href="#regioes">Regiões Atendidas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Ambientes -->
+                <div class="footer-links">
+                    <h4>Ambientes</h4>
+                    <ul>
+                        <li><a href="#ambientes">Cozinhas Sob Medida</a></li>
+                        <li><a href="#ambientes">Dormitórios &amp; Closets</a></li>
+                        <li><a href="#ambientes">Salas de Estar</a></li>
+                        <li><a href="#ambientes">Banheiros &amp; Lavabos</a></li>
+                        <li><a href="#ambientes">Home Office &amp; Estudo</a></li>
+                        <li><a href="#ambientes">Áreas Gourmet</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Contato & Localização -->
+                <div class="footer-contact">
+                    <h4>Atendimento</h4>
+                    <p>
+                        <strong>WhatsApp / Fone:</strong><br>
+                        <a href="https://wa.me/5583999567779" target="_blank">(83) 99956-7779</a>
+                    </p>
+                    <p>
+                        <strong>Instagram:</strong><br>
+                        <a href="https://www.instagram.com/abba.planejados/" target="_blank">@abba.planejados</a>
+                    </p>
+                    <p>
+                        <strong>Sede / Fábrica:</strong><br>
+                        Rua Presidente Café Filho, 100<br>
+                        Cabedelo / João Pessoa - PB
+                    </p>
+                    <p>
+                        <strong>Regiões com Atendimento:</strong><br>
+                        João Pessoa • Campina Grande • Patos • Recife e Região
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abba Planejados Ltda. Todos os direitos reservados.</p>
+                <p>Móveis planejados sob medida de alta precisão.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FLOATING WHATSAPP BUTTON ===== -->
+    <a href="https://wa.me/5583999567779?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20de%20m%C3%B3veis%20planejados." target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Falar no WhatsApp da Abba Planejados">
+        <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.42 11.42 0 0 0 12.04 0C5.45 0 .14 5.31.14 11.86c0 2.09.55 4.13 1.58 5.94L0 24l6.48-1.7a11.82 11.82 0 0 0 5.56 1.72h.01c6.59 0 11.9-5.31 11.9-11.86 0-3.17-1.23-6.15-3.43-8.38ZM12.04 21.6h-.01a9.79 9.79 0 0 1-4.98-1.38l-.36-.21-3.85 1 1.02-3.75-.23-.38a9.74 9.74 0 0 1-1.5-5.02c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.07 1.02 6.92 2.87a9.7 9.7 0 0 1 2.86 6.9c0 5.38-4.38 9.76-9.74 9.76Zm5.37-7.28c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.14-.17.2-.34.22-.63.08-.29-.15-1.23-.45-2.35-1.44-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.53.08-.8.38-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.38.24-.68.24-1.27.17-1.39-.08-.12-.27-.19-.56-.34Z"/></svg>
+        <span>Orçamento WhatsApp</span>
+    </a>
+
+    <!-- ===== BACK TO TOP BUTTON ===== -->
+    <button id="back-to-top" aria-label="Voltar ao início">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+    </button>
+
+    <!-- ===== LIGHTBOX OVERLAY ===== -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" aria-label="Fechar imagem">&times;</button>
+        <img src="" alt="" id="lightbox-img">
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+
+    <!-- ===== INTERACTIVE BUDGET MODAL ===== -->
+    <div id="budget-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+        <div class="modal-card">
+            <button class="modal-close" id="modal-close" aria-label="Fechar janela">&times;</button>
+            <div class="modal-header">
+                <span class="section-tag">Orçamento Rápido</span>
+                <h3>Solicitar Projeto Sob Medida</h3>
+                <p>Preencha os campos abaixo para iniciar seu atendimento personalizado no WhatsApp.</p>
+            </div>
+            <form id="budget-form">
+                <div class="form-group">
+                    <label for="form-name">Seu Nome Completo:</label>
+                    <input type="text" id="form-name" class="form-control" placeholder="Ex: Ana Silva" required>
+                </div>
+                <div class="form-group">
+                    <label for="form-cidade">Sua Cidade / Região:</label>
+                    <input type="text" id="form-cidade" class="form-control" placeholder="Ex: João Pessoa, Recife, etc." required>
+                </div>
+                <div class="form-group">
+                    <label for="form-ambiente">Ambiente Desejado:</label>
+                    <select id="form-ambiente" class="form-control" required>
+                        <option value="Cozinha Planejada">Cozinha Planejada</option>
+                        <option value="Dormitório / Closet">Dormitório / Closet</option>
+                        <option value="Sala de Estar / Home Theater">Sala de Estar / Home Theater</option>
+                        <option value="Banheiro / Lavabo">Banheiro / Lavabo</option>
+                        <option value="Home Office / Corporativo">Home Office / Corporativo</option>
+                        <option value="Área Gourmet / Varanda">Área Gourmet / Varanda</option>
+                        <option value="Casa Completa / Apartamento Todo">Casa Completa / Apartamento Todo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="form-mensagem">Informações Adicionais (opcional):</label>
+                    <textarea id="form-mensagem" class="form-control" rows="3" placeholder="Ex: Já possuo planta / gostaria de ilha central..."></textarea>
+                </div>
+                <button type="submit" class="btn-whatsapp" style="width: 100%; justify-content: center; margin-top: 8px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.52 3.48A11.42 11.42 0 0 0 12.04 0C5.45 0 .14 5.31.14 11.86c0 2.09.55 4.13 1.58 5.94L0 24l6.48-1.7a11.82 11.82 0 0 0 5.56 1.72h.01c6.59 0 11.9-5.31 11.9-11.86 0-3.17-1.23-6.15-3.43-8.38ZM12.04 21.6h-.01a9.79 9.79 0 0 1-4.98-1.38l-.36-.21-3.85 1 1.02-3.75-.23-.38a9.74 9.74 0 0 1-1.5-5.02c0-5.38 4.38-9.76 9.77-9.76 2.61 0 5.07 1.02 6.92 2.87a9.7 9.7 0 0 1 2.86 6.9c0 5.38-4.38 9.76-9.74 9.76Zm5.37-7.28c-.29-.15-1.71-.84-1.98-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.14-.17.2-.34.22-.63.08-.29-.15-1.23-.45-2.35-1.44-.87-.77-1.46-1.72-1.63-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.43-.51.14-.17.19-.29.29-.48.1-.2.05-.38-.02-.53-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.53.08-.8.38-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.08 3.17 5.04 4.45.7.3 1.25.48 1.68.62.71.23 1.36.2 1.87.12.57-.09 1.71-.7 1.95-1.38.24-.68.24-1.27.17-1.39-.08-.12-.27-.19-.56-.34Z"/></svg>
+                    Enviar Solicitação no WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

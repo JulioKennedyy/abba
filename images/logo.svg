@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 160" width="100%" height="100%" fill="none">
+  <!-- Abba Planejados Premium Logo -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5d77f"/>
+      <stop offset="50%" stop-color="#d4af37"/>
+      <stop offset="100%" stop-color="#aa8222"/>
+    </linearGradient>
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#d4af37" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Crown Icon -->
+  <g id="crown" filter="url(#subtleGlow)" fill="url(#goldGrad)" transform="translate(150, 8) scale(0.72)">
+    <!-- Crown base & stylized vertical pillars -->
+    <path d="M5 42 L8 45 L72 45 L75 42 L72 39 L8 39 Z" />
+    <!-- 5 Crown tips / architectural spires -->
+    <!-- Center spire (highest) -->
+    <path d="M37 6 L43 6 L45 37 L35 37 Z" />
+    <polygon points="40,2 45,7 35,7" />
+    <!-- Mid-left spire -->
+    <path d="M22 14 L27 15 L28 37 L20 37 Z" />
+    <polygon points="24,10 28,15 20,15" />
+    <!-- Mid-right spire -->
+    <path d="M53 15 L58 14 L60 37 L52 37 Z" />
+    <polygon points="56,10 60,15 52,15" />
+    <!-- Far-left spire -->
+    <path d="M9 22 L14 24 L16 37 L8 37 Z" />
+    <polygon points="11,18 15,23 7,23" />
+    <!-- Far-right spire -->
+    <path d="M66 24 L71 22 L72 37 L64 37 Z" />
+    <polygon points="69,18 73,23 65,23" />
+  </g>
+
+  <!-- Brand Typography: Λ B B Λ -->
+  <g id="abba-text" fill="#FFFFFF">
+    <!-- Letter 1: Λ -->
+    <path d="M42 108 L62 48 L76 48 L96 108 L84 108 L69 62 L54 108 Z" />
+    
+    <!-- Letter 2: B -->
+    <path d="M112 48 L138 48 C148 48 155 52 155 60 C155 66 151 70 144 72 C153 74 158 79 158 87 C158 97 149 108 136 108 L112 108 Z M124 58 L124 72 L136 72 C141 72 144 69 144 65 C144 61 141 58 136 58 Z M124 82 L124 98 L137 98 C143 98 146 95 146 90 C146 85 143 82 137 82 Z" />
+    
+    <!-- Letter 3: B -->
+    <path d="M174 48 L200 48 C210 48 217 52 217 60 C217 66 213 70 206 72 C215 74 220 79 220 87 C220 97 211 108 198 108 L174 108 Z M186 58 L186 72 L198 72 C203 72 206 69 206 65 C206 61 203 58 198 58 Z M186 82 L186 98 L199 98 C205 98 208 95 208 90 C208 85 205 82 199 82 Z" />
+
+    <!-- Letter 4: Λ -->
+    <path d="M236 108 L256 48 L270 48 L290 108 L278 108 L263 62 L248 108 Z" />
+  </g>
+
+  <!-- Subtitle: PLANEJADOS -->
+  <text x="180" y="138" 
+        text-anchor="middle" 
+        fill="#b0b0c0" 
+        font-family="'Inter', 'Montserrat', -apple-system, sans-serif" 
+        font-size="15" 
+        font-weight="500" 
+        letter-spacing="9">PLANEJADOS</text>
+</svg>
